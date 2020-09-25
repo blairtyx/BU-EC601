@@ -348,3 +348,9 @@ MigrationBackup/
 
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
+
+
+/Project2/twitter_credentials.py
+/Project2/tweets.json
+*Pipfile
+Pipfile.*
