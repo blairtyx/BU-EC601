@@ -355,4 +355,6 @@ MigrationBackup/
 *Pipfile
 Pipfile.*
 
-Project2/tw_example/config.yaml
+Project2/tw_sentiment_example/config.yaml
+Project2/ytb-twitter-api-with-py
+Project2/tweepy_test/twitter_credentials.py
