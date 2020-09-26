@@ -354,3 +354,5 @@ MigrationBackup/
 /Project2/tweets.json
 *Pipfile
 Pipfile.*
+
+Project2/tw_example/config.yaml
