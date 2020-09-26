@@ -16,23 +16,21 @@ def create_url():
     #refer to https://developer.twitter.com/en/docs/twitter-api/tweets/search/integrate/build-a-rule
     query = "from:twitterdev -is:retweet"
     
-
+    # ----------Max result ----------
+    max_results = "max_results=10"
 
     # ----------Tweet fields ----------
-    # Tweet fields are adjustable.
-    
-    # Options include:
-    # attachments, author_id, context_annotations,
-    # conversation_id, created_at, entities, geo, id,
-    # in_reply_to_user_id, lang, non_public_metrics, organic_metrics,
-    # possibly_sensitive, promoted_metrics, public_metrics, referenced_tweets,
-    # source, text, and withheld
-    tweet_fields = "tweet.fields=author_id"
+    tweet_fields = "tweet.fields=created_at,public_metrics,attachments,text"
 
+    # ----------expansions ----------
+    expansions = "expansions=attachments.media_keys,author_id"
+
+    # ----------user fields ----------
+    user_fields = "user.fields=id,name,username,description"
 
     # append query and tweet_field into url
-    url = "https://api.twitter.com/2/tweets/search/recent?query={}&{}".format(
-        query, tweet_fields
+    url = "https://api.twitter.com/2/tweets/search/recent?query={}&{}&{}&{}&{}".format(
+        query, tweet_fields, max_results, expansions, user_fields
     )
     return url
 
