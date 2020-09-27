@@ -1,3 +1,4 @@
 {
-    "python.pythonPath": "/home/blair/.virtualenvs/Project2-BLVnmKVA/bin/python"
+    "python.pythonPath": "/home/blair/.virtualenvs/Project2-BLVnmKVA/bin/python",
+    "python.linting.pylintEnabled": true,
 }
