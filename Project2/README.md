@@ -22,9 +22,15 @@ tyx 2020
 
 ### Error conditions
 
-Q: What happens if twitter is not responding
+#### Solved Problems:
 
 Q: What happens if I pass the wrong handle
+
+A: The code is handleing this situation, no worries.
+
+#### Unsolved:
+
+Q: What happens if twitter is not responding
 
 Q: What happens if Google NLP API does not respond back
 
@@ -32,11 +38,20 @@ Q: What happens if Google NLP API does not respond back
 
 Q: What do I send?
 
+A: 
+
+For user input: 
+
+- Since this application is a command-line app, users are typing to the 
+terminal. 
+
+For application it self:
+- A link/url containing queries for Twitter to return the data.
+
 Q: What do I get?
 
-Q:What is the format of the data?
+A: Analysis result and charts
 
-How can I use such data?
 
 
 Define MVP and user stories

@@ -70,7 +70,7 @@ pipenv install Cython
 pipenv install matplotlib_terminal
 pipenv shell
 ```
-Please refer to [twitter_api](https://github.com/blairtyx/EC601/blob/master/Project2/twitter_api/README.md) and [google_nlp_api](https://github.com/blairtyx/EC601/blob/master/Project2/google_nlp_api/README.md) for detailed information about environment setup.
+Please refer to [twitter_api_try_tweepy](https://github.com/blairtyx/EC601/blob/master/Project2/twitter_api/README.md#try-tweepy-library) and [google_nlp_api](https://github.com/blairtyx/EC601/blob/master/Project2/google_nlp_api/README.md#tutorial-quickstart-set-up-the-natural-language-api) for detailed information about environment setup.
 
 
 
