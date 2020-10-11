@@ -1,0 +1,80 @@
+> ./unit_test
+For N = 12 packets of 1300 bytes:
++ Average wirehair_encoder_create() time: 111 usec (140.541 MBPS)
++ Average wirehair_encode() time: 0 usec (2677.44 MBPS)
++ Average wirehair_decode() time: 9 usec (132.524 MBPS)
++ Average overhead piece count beyond N = 0.0145
++ Average wirehair_recover() time: 6 usec (2554.45 MBPS)
+For N = 32 packets of 1300 bytes:
++ Average wirehair_encoder_create() time: 179 usec (232.402 MBPS)
++ Average wirehair_encode() time: 0 usec (2531.65 MBPS)
++ Average wirehair_decode() time: 6 usec (208.208 MBPS)
++ Average overhead piece count beyond N = 0.0195
++ Average wirehair_recover() time: 16 usec (2535.5 MBPS)
+For N = 102 packets of 1300 bytes:
++ Average wirehair_encoder_create() time: 493 usec (268.966 MBPS)
++ Average wirehair_encode() time: 0 usec (2507.57 MBPS)
++ Average wirehair_decode() time: 5 usec (256.511 MBPS)
++ Average overhead piece count beyond N = 0.0185
++ Average wirehair_recover() time: 52 usec (2539.52 MBPS)
+For N = 134 packets of 1300 bytes:
++ Average wirehair_encoder_create() time: 647 usec (269.243 MBPS)
++ Average wirehair_encode() time: 0 usec (2077.41 MBPS)
++ Average wirehair_decode() time: 5 usec (248.778 MBPS)
++ Average overhead piece count beyond N = 0.0225
++ Average wirehair_recover() time: 69 usec (2492.02 MBPS)
+For N = 169 packets of 1300 bytes:
++ Average wirehair_encoder_create() time: 735 usec (298.912 MBPS)
++ Average wirehair_encode() time: 0 usec (2052.77 MBPS)
++ Average wirehair_decode() time: 4 usec (268.52 MBPS)
++ Average overhead piece count beyond N = 0.02
++ Average wirehair_recover() time: 89 usec (2447.68 MBPS)
+For N = 201 packets of 1300 bytes:
++ Average wirehair_encoder_create() time: 938 usec (278.571 MBPS)
++ Average wirehair_encode() time: 0 usec (2380.52 MBPS)
++ Average wirehair_decode() time: 4 usec (269.888 MBPS)
++ Average overhead piece count beyond N = 0.0225
++ Average wirehair_recover() time: 125 usec (2077.07 MBPS)
+For N = 294 packets of 1300 bytes:
++ Average wirehair_encoder_create() time: 1199 usec (318.766 MBPS)
++ Average wirehair_encode() time: 0 usec (2115.77 MBPS)
++ Average wirehair_decode() time: 4 usec (288.305 MBPS)
++ Average overhead piece count beyond N = 0.011
++ Average wirehair_recover() time: 165 usec (2310.47 MBPS)
+For N = 359 packets of 1300 bytes:
++ Average wirehair_encoder_create() time: 1499 usec (311.341 MBPS)
++ Average wirehair_encode() time: 0 usec (2318.99 MBPS)
++ Average wirehair_decode() time: 4 usec (297.901 MBPS)
++ Average overhead piece count beyond N = 0.0415
++ Average wirehair_recover() time: 208 usec (2233.75 MBPS)
+For N = 413 packets of 1300 bytes:
++ Average wirehair_encoder_create() time: 1718 usec (312.515 MBPS)
++ Average wirehair_encode() time: 0 usec (1970.22 MBPS)
++ Average wirehair_decode() time: 4 usec (287.684 MBPS)
++ Average overhead piece count beyond N = 0.024
++ Average wirehair_recover() time: 246 usec (2180.76 MBPS)
+For N = 770 packets of 1300 bytes:
++ Average wirehair_encoder_create() time: 3081 usec (324.895 MBPS)
++ Average wirehair_encode() time: 0 usec (2299.98 MBPS)
++ Average wirehair_decode() time: 5 usec (259.857 MBPS)
++ Average overhead piece count beyond N = 0.0185
++ Average wirehair_recover() time: 445 usec (2247.87 MBPS)
+For N = 1000 packets of 1300 bytes:
++ Average wirehair_encoder_create() time: 4429 usec (293.52 MBPS)
++ Average wirehair_encode() time: 0 usec (2143.67 MBPS)
++ Average wirehair_decode() time: 5 usec (253.509 MBPS)
++ Average overhead piece count beyond N = 0.0185
++ Average wirehair_recover() time: 595 usec (2182.8 MBPS)
+Wirehair Unit Test
+Start seed = 1602424450250489
+Test_DecodeRandomLosses: Too much overhead: 4 extra for N=226 Seed=1602424450250489 BlockBytes=39
+Test_DecodeRandomLosses: Too much overhead: 4 extra for N=272 Seed=1602424450250489 BlockBytes=39
+Test_DecodeRandomLosses: Too much overhead: 4 extra for N=367 Seed=1602424450250489 BlockBytes=7
+Test_DecodeRandomLosses: Too much overhead: 7 extra for N=933 Seed=1602424450250489 BlockBytes=41
+Test_DecodeRandomLosses: Too much overhead: 4 extra for N=1032 Seed=1602424450250489 BlockBytes=17
+Test_DecodeRandomLosses: Too much overhead: 5 extra for N=1212 Seed=1602424450250489 BlockBytes=41
+Test_DecodeRandomLosses: Too much overhead: 4 extra for N=1798 Seed=1602424450250489 BlockBytes=27
+Test_DecodeRandomLosses: Too much overhead: 5 extra for N=2219 Seed=1602424450250489 BlockBytes=32
+Test_DecodeRandomLosses: Too much overhead: 156 extra for N=2487 Seed=1602424450250489 BlockBytes=23
+Test_DecodeRandomLosses: Too much overhead: 5 extra for N=2657 Seed=1602424450250489 BlockBytes=57
+Test_DecodeRandomLosses: Too much overhead: 5 extra for N=3024 Seed=1602424450250489 BlockBytes=57
