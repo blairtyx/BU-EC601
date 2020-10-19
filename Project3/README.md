@@ -24,4 +24,14 @@ cd build
 
 ## Phase 2
 
-### ? (Build a machine learning Neuron)
+### Code review of several related projects
+
+#### wirehair
+[catid/wirehair](https://github.com/catid/wirehair)
+
+#### simbats
+[shhyang/simbats](https://github.com/shhyang/simbats)
+
+#### fountain-codes
+[cakemanny/fountain-codes](https://github.com/cakemanny/fountain-codes)
+
