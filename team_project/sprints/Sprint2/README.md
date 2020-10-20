@@ -10,7 +10,9 @@
 
 
 
-![BATS-SoC](https://github.com/blairtyx/EC601/blob/master/team_project/sprints/Sprint2/BATS-SoC.png)
+
+
+![BATS-SoC](https://github.com/blairtyx/EC601/blob/master/team_project/sprints/Sprint2/BATS_SoC.png)
 
 
 
