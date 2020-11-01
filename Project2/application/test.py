@@ -2,16 +2,15 @@ import tweepy
 import re
 import numpy as np
 import pandas as pd
-import twitter_credentials as tc
 from google.cloud import language_v1
 from google.cloud.language_v1 import enums
 import matplotlib_terminal
 import matplotlib.pyplot as plt
-
+import os
 
 # Anuthenticaiton
-auth = tweepy.OAuthHandler(tc.CONSUMER_KEY, tc.CONSUMER_SECRET)
-auth.set_access_token(tc.ACCESS_TOKEN, tc.ACCESS_TOKON_SECRET)
+auth = tweepy.OAuthHandler(os.getenv('CONSUMER_KEY'), os.getenv('CONSUMER_SECRET'))
+auth.set_access_token(os.getenv('ACCESS_TOKEN'), os.getenv('tc.ACCESS_TOKON_SECRET'))
 
 api = tweepy.API(auth)
 
