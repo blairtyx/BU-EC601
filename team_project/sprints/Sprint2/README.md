@@ -6,6 +6,22 @@
 
 
 
+![Inter-nodes](https://github.com/blairtyx/EC601/blob/master/team_project/sprints/Sprint2/Inter-nodes.png)
+
+
+
+
+
+![BATS-SoC](https://github.com/blairtyx/EC601/blob/master/team_project/sprints/Sprint2/BATS_SoC.png)
+
+
+
+(control signal and flags have been ignored)
+
+
+
+
+
 ### Encoding module
 
 #### How it works:
@@ -30,7 +46,7 @@ In the source node of this BATS-style network
 
 **BATS encoder:** encoding the raw packets into BATS codes 
 
-**Packetizer: ** prepends the header to batches
+**Packetizer:** prepends the header to batches
 
 #### Note
 
@@ -112,12 +128,14 @@ Frontend: Internet receiver
 
 FPGA chip: XC7A35T-2FGG484I 
 
-Internet Interface: Micrel KSZ9031RNX
+- ~~Button and LED~~
 
-DDR3 chip: Micron 2Gbit(256MB)
+- Internet Interface: Micrel KSZ9031RNX
+
+- DDR3 chip: Micron 2Gbit(256MB)
 
 #### Software: 
-Vivado WebPack Tool
+~~Vivado WebPack Tool~~
 
 
 
@@ -126,4 +144,16 @@ Vivado WebPack Tool
 
 
 
-**delayed due to physical device delivery
+delayed
+
+
+
+
+
+# Sprint 3
+
+- Finish Internet Interface
+  -  MAC, FIFO (may try opencores.org solutions)
+- Controller
+- (DDR3)
+- (Encoding) (Fountain code generator)
