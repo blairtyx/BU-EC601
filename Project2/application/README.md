@@ -1,7 +1,6 @@
 # Social Media Analyzer
 tyx@bu.edu
 
----
 
 ## MVP and User Stories
 ### MVP (Minimum Valualbe Product)
