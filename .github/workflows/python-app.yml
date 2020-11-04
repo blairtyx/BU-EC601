@@ -7,9 +7,12 @@ on:
   push:
     paths: 
       - 'Project2/application'
+      - '.github/workflows'
   pull_request:
     paths: 
       - 'Project2/application'
+      - '.github/workflows'
+
 
 defaults:
   run:
