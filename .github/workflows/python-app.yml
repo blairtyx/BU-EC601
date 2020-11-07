@@ -42,7 +42,7 @@ jobs:
     
     # Configure gcloud CLI
     - run: |
-        gcloud auth application-default
+        gcloud auth application-default print-access-token
     
     - name: gcloud info test
       run: gcloud info
