@@ -42,7 +42,7 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install flake8 pytest tweepy requests Cython matplotlib-terminal
+        pip install flake8 pytest tweepy requests Cython matplotlib-terminal google-cloud-language google-cloud-storage
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: Lint with flake8
       run: |
