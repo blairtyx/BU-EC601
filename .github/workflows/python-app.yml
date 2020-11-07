@@ -23,11 +23,15 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
+    - name: Checkout
+      uses: actions/checkout@v2
+
+    # setup Python
     - name: Set up Python 3.8
       uses: actions/setup-python@v2
       with:
         python-version: 3.8
+    # Setup gcloud CLI
     - name: Google SDK
       uses: GoogleCloudPlatform/github-actions/setup-gcloud@master
       with:
@@ -35,6 +39,10 @@ jobs:
         project_id:  ${{ secrets.GCP_PROJECT_ID }}
         service_account_key: ${{ secrets.GCP_SA_KEY }}
         export_default_credentials: true
+    
+    # Configure gcloud CLI
+    - run: |-
+        gcloud --quiet auth application-default
     
     - name: gcloud info test
       run: gcloud info
@@ -44,12 +52,14 @@ jobs:
         python -m pip install --upgrade pip
         pip install flake8 pytest tweepy requests Cython matplotlib-terminal google-cloud-language google-cloud-storage
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+    
     - name: Lint with flake8
       run: |
         # stop the build if there are Python syntax errors or undefined names
         flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
         # exit-zero treats all errors as warnings. The GitHub editor is 127 chars wide
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
+    
     - name: Base test of test.py
       run: |
         python test.py
