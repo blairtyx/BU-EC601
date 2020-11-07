@@ -41,8 +41,8 @@ jobs:
         export_default_credentials: true
     
     # Configure gcloud CLI
-    - run: |-
-        gcloud --quiet auth application-default
+    - run: |
+        gcloud auth application-default
     
     - name: gcloud info test
       run: gcloud info
