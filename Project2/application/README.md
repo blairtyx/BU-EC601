@@ -61,14 +61,18 @@ One who's interested in one user's Twitter account and would like to have sentim
 
 
 ## Installation
-### Prerequest
-```bash
-pipenv install tweepy 
-pipenv install requests
-pipenv install Cython
-pipenv install matplotlib_terminal
-pipenv shell
-```
+
+### Dependencies
+
+use `pip install -r requirements.txt` to install the required dependencies.
+
+### Credentials
+#### Twitter
+There is a given [demo file](https://github.com/blairtyx/EC601/blob/master/Project2/application/requirements.txt). Replace the content `<your_credentials>` with the credentials provided by twitter.
+
+#### Google
+(working on it)
+
 Please refer to [twitter_api_try_tweepy](https://github.com/blairtyx/EC601/blob/master/Project2/twitter_api/README.md#try-tweepy-library) and [google_nlp_api](https://github.com/blairtyx/EC601/blob/master/Project2/google_nlp_api/README.md#tutorial-quickstart-set-up-the-natural-language-api) for detailed information about environment setup.
 
 
