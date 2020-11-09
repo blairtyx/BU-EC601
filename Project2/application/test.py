@@ -44,8 +44,8 @@ while True:
 True
 
 ## retweets test
-rts_list_1 = ['1', 'True', 'true', 'TRUE','yes', 'YES']
-rts_list_0 = ['0', 'False', 'false','FALSE', 'no', 'NO']
+rts_list_1 = ['1', 'True', 'true', 'TRUE','yes', 'YES', 'Yes', '<true>']
+rts_list_0 = ['0', 'False', 'false','FALSE', 'no', 'NO', 'No', '<false>']
 while True:
   rts = input("Do you need retweets? (type <true> if you do) ")
   if (rts in rts_list_1):
@@ -61,8 +61,8 @@ while True:
 
 ## reply test
 
-rpls_list_1 = ['1', 'True', 'true', 'TRUE','yes', 'YES']
-rpls_list_0 = ['0', 'False', 'false','FALSE','no', 'NO']
+rpls_list_1 = ['1', 'True', 'true', 'TRUE','yes', 'YES', 'Yes', '<true>']
+rpls_list_0 = ['0', 'False', 'false','FALSE','no', 'NO', 'No', '<false>']
 while True:
   rpls = input("Do you need replies? (type <ture> if you do) ")
   if (rpls in rpls_list_1):
