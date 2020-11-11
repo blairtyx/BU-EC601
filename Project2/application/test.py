@@ -42,8 +42,8 @@ def user_input_info(name_i, cnt_i, rts_i, rpls_i, api ):
     return 2
 
   ## retweets test
-  rts_list_1 = ['1', 'True', 'true', 'TRUE','yes', 'YES']
-  rts_list_0 = ['0', 'False', 'false','FALSE', 'no', 'NO']
+  rts_list_1 = ['1', 'True', 'true', 'TRUE','yes', 'YES', 'Yes', '<true>']
+  rts_list_0 = ['0', 'False', 'false','FALSE', 'no', 'NO', 'No', '<false>']
   if (rts_i in rts_list_1):
     rts = 'True'
   elif (rts_i in rts_list_0):
@@ -54,8 +54,8 @@ def user_input_info(name_i, cnt_i, rts_i, rpls_i, api ):
 
 
   ## reply test
-  rpls_list_1 = ['1', 'True', 'true', 'TRUE','yes', 'YES']
-  rpls_list_0 = ['0', 'False', 'false','FALSE','no', 'NO']
+  rpls_list_1 = ['1', 'True', 'true', 'TRUE','yes', 'YES', 'Yes', '<true>']
+  rpls_list_0 = ['0', 'False', 'false','FALSE','no', 'NO', 'No', '<false>']
   rpls = input("Do you need replies? (type <ture> if you do) ")
   if (rpls_i in rpls_list_1):
     rpls = 'False'
@@ -195,8 +195,8 @@ if __name__ == "__main__":
   parser = argparse.ArgumentParser(description='Sentiment Analyzer for Tweets, using Google NLP')
   parser.add_argument('--twitter-name', type=str, dest='name', default='Twitter')
   parser.add_argument('--tweets-num', type=int, dest='number', default='10')
-  parser.add_argument('--retweets', type=bool, dest='rts', default=False)
-  parser.add_argument('--replies', type=bool, dest='rpls', default=False)
+  parser.add_argument('--retweets', type=str, dest='rts', default=False)
+  parser.add_argument('--replies', type=str, dest='rpls', default=False)
   args = parser.parse_args()
   main(args.name, args.number, args.rts, args.rpls)
 
