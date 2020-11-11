@@ -56,6 +56,7 @@ def user_input_info(name_i, cnt_i, rts_i, rpls_i, api ):
   ## reply test
   rpls_list_1 = ['1', 'True', 'true', 'TRUE','yes', 'YES', 'Yes', '<true>']
   rpls_list_0 = ['0', 'False', 'false','FALSE','no', 'NO', 'No', '<false>']
+
   rpls = input("Do you need replies? (type <ture> if you do) ")
   if (rpls_i in rpls_list_1):
     rpls = 'False'
