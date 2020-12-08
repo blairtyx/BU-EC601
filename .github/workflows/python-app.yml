@@ -6,17 +6,17 @@ name: Python application
 on:
   push:
     paths: 
-      - 'Project2/application/**'
+      - 'Project4/Unit-test/**'
   pull_request:
     paths: 
-      - 'Project2/application/**'
+      - 'Project4/Unit-test/**'
 
 
 
 
 defaults:
   run:
-    working-directory: Project2/application
+    working-directory: Project4/Unit-test
 
 jobs:
   build:
@@ -58,6 +58,6 @@ jobs:
     
     - name: Base test of test.py
       run: |
-        python test.py --twitter-name Twitter --tweets-num 10 --retweets False --replies False
+        pytest
         
         

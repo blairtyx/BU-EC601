@@ -13,33 +13,27 @@ import argparse
 def authu():
 
   auth = tweepy.OAuthHandler(os.getenv('CONSUMER_KEY'), os.getenv('CONSUMER_SECRET'))
-  auth.set_access_token(os.getenv('ACCESS_TOKEN'), os.getenv('tc.ACCESS_TOKON_SECRET'))
-
+  auth.set_access_token(os.getenv('ACCESS_TOKEN'), os.getenv('ACCESS_TOKON_SECRET'))
   api = tweepy.API(auth)
   return api
-
-
-# read keywords from shell input
-# screen_name = input("Whose twitter do you want to analysis? (type the user name e.g. JoeBiden, realDonaldTrump) ")
-
 
 
 
 #################################
 #user input test
-def user_input_info(name_i, cnt_i, rts_i, rpls_i, api ):
+def user_input_info(name_i, cnt_i, rts_i, rpls_i):
   ## username test
 
   if re.search(r'[\s]', name_i):
     print ("    No spaces please.")
-    return 1
+    exit(2)
 
   ## count test
   if (int(cnt_i) in range(10,1001)):
     count = int(cnt_i)
   else:
     print ("    Please pick a integer between 10-1000")
-    return 2
+    exit(3)
 
   ## retweets test
   rts_list_1 = ['1', 'True', 'true', 'TRUE','yes', 'YES', 'Yes', '<true>']
@@ -50,7 +44,7 @@ def user_input_info(name_i, cnt_i, rts_i, rpls_i, api ):
     rts = 'False'
   else:
     print ("    Please type <true>, or <false>")
-    return 3
+    exit(4)
 
 
   ## reply test
@@ -62,18 +56,20 @@ def user_input_info(name_i, cnt_i, rts_i, rpls_i, api ):
     rpls = 'True'
   else:
     print ("    Please type <true>, or <false>")
-    return 4
-  
-  
+    exit(5)
 
+  
+  return [name_i, count, rts, rpls]
+  
+def tweets_retreiving(parm,api):
   #Retreive tweets from twitter
-  posts = api.user_timeline(screen_name = name_i, 
-                                      count = count, 
+
+  posts = api.user_timeline(screen_name = parm[0], 
+                                      count = parm[1], 
                                       lang = "en", 
                                       tweet_mode = "extended",
-                                      include_rts = rts,
-                                      exclude_replies = rpls )
-
+                                      include_rts = parm[2],
+                                      exclude_replies = parm[3] )
   return posts
 
 
@@ -86,12 +82,14 @@ def tweets_storing(posts):
   print ('  Data received!  ')
   print()
 
+
   #clean text of tweets 
   print ('Cleaning text content......')
 
   df['Tweets'] = df['Tweets'].apply(cleanText)
   print ('  Cleaning process finished!')
   print ()
+
   return df
 
 
@@ -182,9 +180,11 @@ def result_represent(df):
 
 def main(name, count, rts_flag, rpls_flag):
   api = authu()
-  posts = user_input_info(name, count, rts_flag, rpls_flag, api)
+  parm = user_input_info(name, count, rts_flag, rpls_flag)
+  posts = tweets_retreiving(parm,api)
   data_frame = tweets_storing(posts)
   google_nlp(data_frame)
+  print(data_frame.shape)
   nlp_analysis(data_frame)
   result_represent(data_frame)
   return
@@ -192,10 +192,10 @@ def main(name, count, rts_flag, rpls_flag):
 
 if __name__ == "__main__":
   parser = argparse.ArgumentParser(description='Sentiment Analyzer for Tweets, using Google NLP')
-  parser.add_argument('--twitter-name', type=str, dest='name', default='Twitter')
+  parser.add_argument('--twitter-name', type=str, dest='name', default='JoeBiden')
   parser.add_argument('--tweets-num', type=int, dest='number', default='10')
-  parser.add_argument('--retweets', type=str, dest='rts', default=False)
-  parser.add_argument('--replies', type=str, dest='rpls', default=False)
+  parser.add_argument('--retweets', type=str, dest='rts', default="False")
+  parser.add_argument('--replies', type=str, dest='rpls', default="False")
   args = parser.parse_args()
   main(args.name, args.number, args.rts, args.rpls)
 
