@@ -20,10 +20,15 @@ BU MS EC601 2020
 
 #### Sprint 4
 
+[Finite Field Multiplier](https://github.com/blairtyx/EC601/blob/master/team_project/Sprint-reports/Sprint4-README.md)
+
 #### Sprint 5
+
+[Finite Filed Gaussian Elimination Operator](https://github.com/blairtyx/EC601/blob/master/team_project/Sprint-reports/Sprint5-README.md)
 
 #### Poster
 
+[Poster Presentation](https://github.com/blairtyx/EC601/blob/master/team_project/Sprint-reports/final_poster.pdf)
 
 ---
 
