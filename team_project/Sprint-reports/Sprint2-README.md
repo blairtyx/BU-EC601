@@ -12,7 +12,7 @@
 
 
 
-![BATS-SoC](https://github.com/blairtyx/EC601/blob/master/team_project/Sprint-reports//img/s2-side-notes.png)
+![BATS-SoC](https://github.com/blairtyx/EC601/blob/master/team_project/Sprint-reports/img/s2-side-notes.png)
 
 
 
