@@ -1,6 +1,6 @@
 # Sprint4
 
-Finit Field Multiplier
+Finite Field Multiplier
 
 - Polynomial Multiplication
 - Reduction Modulo the irreducible polynomial
@@ -26,7 +26,7 @@ $$
 (x^4 + x^3 + x2 + x + 1) * (x + 1) = x^5 + 1
 $$
 
-![sprint4-1](https://github.com/blairtyx/EC601/blob/master/team_project/Sprint-reports/img/s4-mul.png)
+![s4-mul](https://github.com/blairtyx/EC601/blob/master/team_project/Sprint-reports/img/s4-mul.png)
 
 
 
@@ -34,7 +34,7 @@ $$
 
 ### Reduction Modulo
 
-![sprint4-2](https://github.com/blairtyx/EC601/blob/master/team_project/Sprint-reports/img/s4-modulo.png)
+![s4-modulo](https://github.com/blairtyx/EC601/blob/master/team_project/Sprint-reports/img/s4-modulo.png)
 
 
 
@@ -60,5 +60,5 @@ q = x+1\\
 r = x^6 + x^5 + x^4 + x^3 + 1
 $$
 
-![sprint4-0](https://github.com/blairtyx/EC601/blob/master/team_project/Sprint-reports/img/s4-example.png)
+![s4-example](https://github.com/blairtyx/EC601/blob/master/team_project/Sprint-reports/img/s4-example.png)
 
