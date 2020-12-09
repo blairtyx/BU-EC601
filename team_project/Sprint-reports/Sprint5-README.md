@@ -4,5 +4,5 @@
 
 - Forward Pivoting
 - Backward Elimination (developing)
-![s5-processors](https://github.com/blairtyx/EC601/blob/master/team_project/Sprint-reports/img/s5-processors)
+![s5-processors](https://github.com/blairtyx/EC601/blob/master/team_project/Sprint-reports/img/s5-processors.png)
 
