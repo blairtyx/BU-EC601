@@ -24,12 +24,12 @@ Error: Process completed with exit code 1.
 ```
 
 
-## Sprint 2 (current)
+## Sprint 2
 
 ### Improvement
 1. try skip the module "Google SDK" in Sprint 1, 
    
-   use pip to install the google cloud SDK, use requirements.txt to manage the dependencies. 
+   use pip to install the google cloud SDK, use requirements.txt to manage the dependencies. (finished)
 
-2. Update the credential management method
-3. Add pytest cases.
+2. Update the credential management method (finished)
+3. Add pytest cases.(finished)
